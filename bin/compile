@@ -27,8 +27,12 @@ create_default_env() {
   export NODE_VERBOSE=${NODE_VERBOSE:-false}
 }
 
-cd $1
-echo "-----> npm run migrate"
 export_env_dir "$ENV_DIR"
 create_default_env
+
+# everything above this line is from:
+# https://github.com/heroku/heroku-buildpack-nodejs/blob/master/bin/compile
+# https://github.com/heroku/heroku-buildpack-nodejs/blob/master/lib/environment.sh
+
+cd $BUILD_DIR
 npm run migrate
