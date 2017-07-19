@@ -1,4 +1,4 @@
 #!/bin/sh
 
-echo "migrate"
+echo "Knex migration"
 exit 0
