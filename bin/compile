@@ -1,6 +1,5 @@
 #!/bin/sh
 
-BUILD_DIR=${1:-}
-
-cd $BUILD_DIR
+cd $1
+echo "-----> npm run migrate"
 npm run migrate
