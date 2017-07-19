@@ -1,0 +1,6 @@
+#!/bin/sh
+
+BUILD_DIR=${1:-}
+
+cd $BUILD_DIR
+npm run migrate
