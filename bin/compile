@@ -35,4 +35,4 @@ create_default_env
 # https://github.com/heroku/heroku-buildpack-nodejs/blob/master/lib/environment.sh
 
 cd $BUILD_DIR
-npm run migrate
+yarn run migrate
